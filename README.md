@@ -1,6 +1,6 @@
 # Student-Adaptability to Online Learning Research
 
- This project does an indepth analysis of student adaptability level of students to online classes/education.  Part one focuses on understanding the data (data wrangling).  Part two focuses data visualization, displaying the data in a useful way to share information.  Part three and four implement supervised learning techniques (neural networks, random forests, KNN, etc.).
+ This project does an indepth analysis of student adaptability level of students to online classes/education.  Part one focuses on understanding the data (data wrangling).  Part two focuses data visualization, displaying the data in a useful way to share information.  Part three and four implement supervised and unsupervised learning techniques (neural networks, random forests, KNN, etc.).
 
 #### Data Description
 ##### Features
