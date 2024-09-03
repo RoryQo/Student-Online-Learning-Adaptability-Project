@@ -14,19 +14,19 @@ linear svm or Random Forest model. This model could be used to adjust the teachi
 
 #### Data Description
 ##### Features
-* Gender: Gender type of student
-* Age: Age range of the student
-* Education Level: Education institution level
-* Institution Type: Education institution type
-* IT Student: Studying as IT student or not
-* Location: whether student is located in town or not
-* Load-shedding: Level of load shedding
-* Financial Condition: Financial condition of family
-* Internet Type: Internet type used mostly in device
-* Network Type: Network connectivity type
-* Class Duration: Daily class duration
-* Self LMS: Institution’s own LMS availability
-* Device: Device used mostly in class
+* `Gender:` Gender type of student
+* `Age:` Age range of the student
+* `Education Level:` Education institution level
+* `Institution Type:` Education institution type
+* `IT Student:` Studying as IT student or not
+* `Location:` whether student is located in town or not
+   `Load-shedding:` Level of load shedding
+* `Financial Condition:` Financial condition of family
+* `Internet Type:` Internet type used mostly in device
+* `Network Type:` Network connectivity type
+* `Class Duration:` Daily class duration
+* `Self LMS:` Institution’s own LMS availability
+* `Device:` Device used mostly in class
 
 ##### Target
 * Adaptability Level: Adaptability level of the students
