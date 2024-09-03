@@ -6,11 +6,10 @@
 Given future feature data we can predict a students online learning adaptability level, using our non
 linear svm or Random Forest model. This model could be used to adjust the teaching style, or budget allocation of learning materials to best accomodate the predicted adaptability level of students.  According to the testing data our non linear svm model and random forest model were accurate in predictig student adaptability level approximately 93% of the time.  It appears the top four most important factors (from the random forest model) being age, class duration, gender, and education level (in order from most to least importance).  The least four import factors (least important to more important) being device type, LMS availability, internet type, load-shedding.
 
-+ Naive bayes, guassian models and regularized regression were the least accurate (less than 70%)
++ More basic models like Naive bayes,and regularized/linear regression were not sufficiently accurate (less than 70%), so we continued to fit more advanced models for improved accuracy
 + Non linear SVM model and Random forest models were the best (93% Accurate)
 + Neural networks and other unsupervised learning models were all fairly accurate (valid models)
-  + Regularized with aplha as 0.001 or 0.005 was 2nd best (92.7% accuracy)
-  + 2 layer neural network was worse than single layer
+
 
 
 #### Data Description
