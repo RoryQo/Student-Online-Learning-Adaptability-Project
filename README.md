@@ -29,4 +29,4 @@ linear svm or Random Forest model. This model could be used to adjust the teachi
 * `Device:` Device used mostly in class
 
 ##### Target
-* Adaptability Level: Adaptability level of the students
+* `Adaptability Level:` Adaptability level of the students
