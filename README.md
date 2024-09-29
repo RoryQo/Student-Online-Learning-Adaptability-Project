@@ -1,32 +1,66 @@
-# Student-Adaptability to Online Learning Research
+<div align="center">
 
- This project does an in-depth analysis of the student adaptability level of students to online classes/education and aims to predict the adaptability level of the students (high, moderate, or low) given feature data for the student.  Part one focuses on encoding and preparing the data (data wrangling).  Part two focuses on data visualization, displaying the data to view relationships between the features themselves and the target.  Parts three and four implement and compare supervised and unsupervised learning techniques (neural networks, random forests, KNN, etc.) to predict the adaptability level. Part four contains the conclusion for the best model and model applications.
+# Mini-Project: Students' Adaptability to Online Learning
 
-#### Results
-Given future feature data, we can predict a student's online learning adaptability level using our non
-linear svm or Random Forest model. This model could be used to adjust the teaching style or budget allocation of learning materials to best accommodate the predicted adaptability level of students.  According to the testing data, our nonlinear SVM model and random forest model were accurate in predicting student adaptability levels approximately 93% of the time.  It appears the top four most important factors (from the random forest model) are age, class duration, gender, and education level (in order from most to least important).  The last four important factors (least important to more important) are device type, LMS availability, internet type, and load-shedding.
+</div>
 
-+ More basic models like Naive Bayes,and regularized regression were not sufficiently accurate (less than 70%), so we continued to fit more advanced models for improved accuracy
-+ Nonlinear SVM model and Random forest models were the best (93% Accurate)
-+ Neural networks and other unsupervised learning models were all fairly accurate (valid models)
+## Overview
+This project investigates students' adaptability to online learning through data wrangling, visualization, and machine learning techniques. The dataset contains no missing values, ensuring a clean analysis. The goal is to understand key factors influencing adaptability levels and predict these levels based on various features.
 
+## Table of Contents
+- [Data Description](#data-description)
+- [Conclusion](#conclusion)
+- [Data Wrangling](#data-wrangling)
+- [Visualization](#visualization)
+- [Model Implementation](#model-implementation)
 
+## Data Description
+The dataset comprises various features related to students' demographics and learning environments, as well as a target variable indicating adaptability levels. Here’s a breakdown of the features:
 
-#### Data Description
-##### Features
-* `Gender:` Gender type of student
-* `Age:` Age range of the student
-* `Education Level:` Education institution level
-* `Institution Type:` Education institution type
-* `IT Student:` Studying as IT student or not
-* `Location:` whether student is located in town or not
-   `Load-shedding:` Level of load shedding
-* `Financial Condition:` Financial condition of family
-* `Internet Type:` Internet type used mostly in device
-* `Network Type:` Network connectivity type
-* `Class Duration:` Daily class duration
-* `Self LMS:` Institution’s own LMS availability
-* `Device:` Device used mostly in class
+- **Gender**: Gender type of the student (e.g., Male, Female).
+- **Age**: Age range of the student (e.g., 1-5, 6-10, 11-15, 16-20, 21-25, 26-30).
+- **Education Level**: Level of education institution (e.g., School, College, University).
+- **Institution Type**: Type of education institution (e.g., Government, Non-Government).
+- **IT Student**: Indicates if the student is studying in an IT-related field (e.g., Yes, No).
+- **Location**: Indicates whether the student is located in a town (e.g., Yes, No).
+- **Load-shedding**: Level of load shedding experienced by the student (e.g., Low, High).
+- **Financial Condition**: Financial condition of the student's family (e.g., Poor, Mid, Rich).
+- **Internet Type**: Type of internet primarily used (e.g., Wifi, Mobile Data).
+- **Network Type**: Type of network connectivity (e.g., 2G, 3G, 4G).
+- **Class Duration**: Daily duration of classes (e.g., 0, 1-3, 3-6 hours).
+- **Self LMS**: Availability of the institution’s own Learning Management System (e.g., Yes, No).
+- **Device**: Device primarily used for classes (e.g., Mobile, Computer, Tablet).
 
-##### Target
-* `Adaptability Level:` Adaptability level of the students
+### Target Variable
+- **Adaptability Level**: Indicates the adaptability level of the students (e.g., Low, Moderate, High).
+
+## Conclusion
+This project demonstrates the potential to predict students' online learning adaptability levels using advanced machine learning models, specifically a non-linear Support Vector Machine (SVM) and a Random Forest model. With an impressive accuracy of approximately 93% on testing data, these models provide valuable insights for educators and institutions.
+
+The analysis reveals that the most significant factors influencing adaptability are age, class duration, gender, and education level, ranked from most to least important. Conversely, the least influential factors include device type, LMS availability, internet type, and load-shedding.
+
+While basic models like Naive Bayes and regularized regression yielded accuracies below 70%, the exploration of more sophisticated models proved beneficial. Both the non-linear SVM and Random Forest models emerged as the most effective, outperforming simpler methods. Neural networks and other unsupervised learning techniques also demonstrated promising accuracy, indicating their potential applicability in similar contexts.
+
+Utilizing these predictive models can help educators tailor teaching strategies and allocate resources more effectively, ensuring that learning materials align with the predicted adaptability levels of students.
+
+## Data Wrangling
+### Frequency Tables
+Created frequency tables for the response variable, "Adaptivity Level," and for "Education Level" to understand the distribution of students across different categories.
+
+### Encoding Categorical Variables
+Categorical variables such as Age, Network Type, and Class Duration were encoded into numerical values for analysis.
+
+### One-Hot Encoding
+The remaining categorical variables (excluding the response variable) were one-hot encoded to prepare the data for modeling.
+
+### Scaling Variables
+Various scaling techniques (MinMaxScaler, StandardScaler, RobustScaler, Normalizer) were applied to ensure that all features contributed equally to model performance.
+
+### Handling Missing Data
+Although the dataset contains no missing values, the process of imputing missing values using the most frequent value strategy was demonstrated.
+
+## Visualization
+Utilized Python libraries to create insightful visualizations:
+- **Pie Chart**: Displayed the distribution of students by adaptability levels.
+- **Count Plots**: Analyzed distributions and relationships among demographic factors like age and gender.
+- **Facet Grid and Pairplot**: Provided multi-dimensional views and
