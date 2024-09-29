@@ -9,6 +9,8 @@ This project investigates students' adaptability to online learning through data
 - [Data Wrangling](#data-wrangling)
 - [Visualization](#visualization)
 - [Model Implementation](#model-implementation)
+- [Requirments](#requirements)
+- [Usage](#usage)
 
 ## Data Description
 The dataset comprises various features related to students' demographics and learning environments, as well as a target variable indicating adaptability levels. Here’s a breakdown of the features:
@@ -83,9 +85,6 @@ Compared model performances and analyzed their robustness.
 - scikit-learn
 - matplotlib
 - seaborn
-
-## Installation
-To install the required packages, run the appropriate command for your environment.
 
 ## Usage
 Clone the repository and run the Jupyter Notebook or Python script to execute the analysis.
