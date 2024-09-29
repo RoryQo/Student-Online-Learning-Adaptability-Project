@@ -1,15 +1,11 @@
-<div align="center">
-
 # Mini-Project: Students' Adaptability to Online Learning
-
-</div>
 
 ## Overview
 This project investigates students' adaptability to online learning through data wrangling, visualization, and machine learning techniques. The dataset contains no missing values, ensuring a clean analysis. The goal is to understand key factors influencing adaptability levels and predict these levels based on various features.
 
 ## Table of Contents
 - [Data Description](#data-description)
-- [Conclusion](#conclusion)
+- [Results](#results)
 - [Data Wrangling](#data-wrangling)
 - [Visualization](#visualization)
 - [Model Implementation](#model-implementation)
@@ -34,7 +30,7 @@ The dataset comprises various features related to students' demographics and lea
 ### Target Variable
 - **Adaptability Level**: Indicates the adaptability level of the students (e.g., Low, Moderate, High).
 
-## Conclusion
+## Results
 This project demonstrates the potential to predict students' online learning adaptability levels using advanced machine learning models, specifically a non-linear Support Vector Machine (SVM) and a Random Forest model. With an impressive accuracy of approximately 93% on testing data, these models provide valuable insights for educators and institutions.
 
 The analysis reveals that the most significant factors influencing adaptability are age, class duration, gender, and education level, ranked from most to least important. Conversely, the least influential factors include device type, LMS availability, internet type, and load-shedding.
@@ -44,6 +40,7 @@ While basic models like Naive Bayes and regularized regression yielded accuracie
 Utilizing these predictive models can help educators tailor teaching strategies and allocate resources more effectively, ensuring that learning materials align with the predicted adaptability levels of students.
 
 ## Data Wrangling
+
 ### Frequency Tables
 Created frequency tables for the response variable, "Adaptivity Level," and for "Education Level" to understand the distribution of students across different categories.
 
@@ -63,4 +60,34 @@ Although the dataset contains no missing values, the process of imputing missing
 Utilized Python libraries to create insightful visualizations:
 - **Pie Chart**: Displayed the distribution of students by adaptability levels.
 - **Count Plots**: Analyzed distributions and relationships among demographic factors like age and gender.
-- **Facet Grid and Pairplot**: Provided multi-dimensional views and
+- **Facet Grid and Pairplot**: Provided multi-dimensional views and interactions among encoded variables.
+- **Bin Plots**: Illustrated relationships between age and class duration.
+
+## Model Implementation
+### Data Preparation
+Categorical variables were encoded, and the dataset was split into training and testing sets.
+
+### Model Training
+Implemented various classification algorithms, including Logistic Regression, KNN, Decision Tree, and Random Forest. Each model was evaluated based on accuracy, precision, and recall.
+
+### Hyperparameter Tuning
+Applied techniques like grid search to optimize model parameters.
+
+### Model Evaluation
+Compared model performances and analyzed their robustness.
+
+## Requirements
+- Python 3.x
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+
+## Installation
+To install the required packages, run the appropriate command for your environment.
+
+## Usage
+Clone the repository and run the Jupyter Notebook or Python script to execute the analysis.
+
+Feel free to contribute to the project or suggest improvements!
