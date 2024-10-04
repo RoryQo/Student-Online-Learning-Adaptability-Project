@@ -51,9 +51,24 @@ Categorical variables such as Age, Network Type, and Class Duration were encoded
 
 ### One-Hot Encoding
 The remaining categorical variables (excluding the response variable) were one-hot encoded to prepare the data for modeling.
+```
+# Create dummy variables for other categorical variables
 
+data1 = pd.get_dummies(data, columns = ['Education Level', 
+                                               'Gender', 'Location', 'Institution Type', 
+                                               'IT Student', 'Load-shedding', 'Financial Condition'
+                                               , 'Internet Type', 'Device', 'Self Lms' ], dtype=int)
+```
 ### Scaling Variables
 Various scaling techniques (MinMaxScaler, StandardScaler, RobustScaler, Normalizer) were applied to ensure that all features contributed equally to model performance.
+```
+# Create a loop to apply the MinMaxScaler to all columns in df
+
+datac= data1.copy()
+for col in datac:
+    scaler = MinMaxScaler()
+    datac[[col]]= scaler.fit_transform(datac[[col]])
+```
 
 ### Handling Missing Data
 Although the dataset contains no missing values, the process of imputing missing values using the most frequent value strategy was demonstrated.
@@ -74,7 +89,17 @@ Implemented various classification algorithms, including Logistic Regression, KN
 
 ### Hyperparameter Tuning
 Applied techniques like grid search to optimize model parameters.
+```
+# consider 10 different values of K
+search_space = [{"knn__n_neighbors": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}]
 
+# Create search with parameters and set 5 fold cross validation
+classifier = GridSearchCV(
+    pipe, search_space, cv=5, verbose=0).fit(X_train, y_train)
+
+# Calculate best estimator
+classifier.best_estimator_.get_params()["knn__n_neighbors"]
+```
 ### Model Evaluation
 Compared model performances and analyzed their robustness.
 
