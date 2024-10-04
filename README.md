@@ -79,6 +79,7 @@ Utilized Python libraries to create insightful visualizations:
 - **Count Plots**: Analyzed distributions and relationships among demographic factors like age and gender.
 - **Facet Grid and Pairplot**: Provided multi-dimensional views and interactions among encoded variables.
 - **Bin Plots**: Illustrated relationships between age and class duration.
+<img src="https://raw.githubusercontent.com/RoryQo/Student-Online-Learning-Adaptability-Project/main/Graph1.jpg" width="400" />
 
 ## Model Implementation
 ### Data Preparation
