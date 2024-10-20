@@ -1,7 +1,7 @@
 # Full-Project: Students' Adaptability to Online Learning
 
 ## Overview 
-This project investigates students' adaptability to online learning through data wrangling, visualization, and machine learning techniques. The goal is to understand key factors influencing adaptability levels and predict these levels based on various features.
+This project investigates students' adaptability to online learning through data wrangling, visualization, and machine learning techniques. The goal is to understand key factors influencing adaptability levels and predict these levels based on various features. 
 
 ## Table of Contents
 - [Data Description](#data-description)
